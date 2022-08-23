@@ -1,6 +1,8 @@
 # gimnasioAltamiranda
+
 repo del gimnasio
-## Subtítulo
-algun comentario por acá
-### Título inferior
-Otro comentario
+
+## Hasta el 23AGO22
+
+- gimnasio.html
+- staff.html
