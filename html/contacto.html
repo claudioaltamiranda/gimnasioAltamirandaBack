@@ -62,11 +62,57 @@
       </div>
     </nav>
     <div class="container-fluid">
-      <div class="container">
-        <div class="row">
-          <h1 class="display-4">Contacto</h1>
+      <h1 class="display-4">Contacto</h1>
+    </div>
+    <div class="container px-5">
+      <form>
+        <!-- APELLIDO Y NOMBRE -->
+        <div class="mb-3">
+          <label for="apellidoYNombreTextInput" class="form-label"
+            >Apellido y nombre</label
+          >
+          <input
+            type="text"
+            id="apellidoYNombreTextInput"
+            class="form-control"
+            placeholder="Apellido y nombre"
+          />
         </div>
-      </div>
+        <!-- EMAIL -->
+        <div class="mb-3">
+          <label for="inputEmail" class="form-label">Correo electrónico</label>
+          <input
+            type="email"
+            class="form-control"
+            id="inputEmail"
+            placeholder="Email de contacto"
+            aria-describedby="..."
+          />
+        </div>
+        <!-- TELEFONO DE CONTACTO -->
+        <div class="mb-3">
+          <label for="telefonoDeContactoTextInput" class="form-label"
+            >Teléfono de contacto</label
+          >
+          <input
+            type="text"
+            id="telefonoDeContactoTextInput"
+            class="form-control"
+            placeholder="Teléfono de contacto"
+          />
+        </div>
+        <!-- TU CONSULTA -->
+        <div class="mb-3">
+          <label for="comentarioTextarea">Comentario</label>
+          <textarea
+            class="form-control"
+            placeholder="Deja tu comentario aca ..."
+            id="comentarioTextarea"
+            style="height: 100px"
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
     </div>
   </body>
 </html>

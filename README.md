@@ -11,3 +11,5 @@ repo del gimnasio
 
 - testimonios.html
   cambios en la navegación (el nav expande en MD)
+- contacto.html
+- index.html: falta la imagen principal con el título centrado
