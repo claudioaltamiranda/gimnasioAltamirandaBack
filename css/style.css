@@ -4,18 +4,33 @@
   box-sizing: border-box;
 }
 
-.imgCarousel {
-  display: none;
-  width: 100vw;
-  height: auto;
-}
+/* .bgOtro {
+  background: linear-gradient(
+    to right,
+    rgba(255, 68, 0, 0.3),
+    rgba(255, 68, 0, 0.7)
+  );
+} */
 
-.bgOrange {
-  background-color: orange;
+.bgPropio {
+  background: linear-gradient(to top right, #50310d 0%, #ecd77a 100%);
+  /* background-color: rgba(0, 0, 0, 0.1); */
 }
 
 .textOrange {
   color: orange;
+}
+
+/* GIMNASIO.HTML */
+.imgCarousel {
+  display: none;
+  width: 100vw;
+  max-width: 800px;
+  object-fit: cover;
+}
+
+#carousel--gimnasio {
+  max-width: 800px;
 }
 
 /* TESTIMONIOS.HTML */
@@ -34,9 +49,53 @@
   border-radius: 50%;
 }
 
-/* CLASES PARA PRACTICA DE FLEX */
-/* div {
-  border: 1px solid rgba(0, 0, 255, 0.488);
-  background-color: aquamarine;
+/* STAFF.HTML, UNA ANIMACION */
+.animadoLadoALado {
+  font-weight: bold;
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
- */
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+/* TESTIMONIOS.HTML, UNA ANIMACION, HOVER */
+.animadoColor {
+  font-weight: bold;
+  animation-duration: 3s;
+  animation-name: cambiaColor;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes cambiaColor {
+  from {
+    color: black;
+  }
+
+  to {
+    color: orange;
+  }
+}
+
+.card:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 10px black;
+}
+
+/* CONTACTO.HTML, HOVER */
+input:hover,
+textarea:hover {
+  box-shadow: 2px 2px 4px black;
+}
